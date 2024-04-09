@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100vh;
+}
+
+h2 {
+  font-size: 70px;
+  margin: 0;
+  padding: 0;
+}
+
+h2.hit {
+  color: chocolate;
+}
+
+h2.char-inline {
+  display: inline;
+}
+
+h3 {
+  font-size: 30px;
+  margin: 0;
+  padding: 0;
+  color: chocolate;
+  display: inline;
+  margin-right: 10px;
+}
+
+.score {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
