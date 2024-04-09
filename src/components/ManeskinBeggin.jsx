@@ -681,6 +681,13 @@ const ManeskinBeggin = ({ setSong }) => {
         <button onClick={()=>togglePlay(4)}>Normal</button>
         <button onClick={()=>togglePlay(6)}>Hard</button>
         <button onClick={()=>togglePlay(8)}>Expert</button>
+
+        <h1>High scores</h1>
+        <ul>
+          {highScores.map((score, index) => (
+            <li key={index}>{score.score}</li>
+          ))}
+        </ul>
       </div> }
 
     </div>
