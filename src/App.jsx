@@ -7,7 +7,8 @@ import Song from './components/Song'
 const songs = [
   "Maneskin - Beggin",
   "Johnny Cash - Walk The Line",
-  "Kavinsky - Nightcall"
+  "Kavinsky - Nightcall",
+  "Prodigy - Firestarter"
 ]
 
 const KavinskyNightcallLyrics = [
@@ -71,6 +72,39 @@ const KavinskyNightcallLyrics = [
   "But you're still the same",
 ]
 
+const ProdigyFirestarterLyrics = [
+  "0",
+  "",
+  "34",
+  "I'm the trouble starter, punkin' instigator",
+  "40",
+  "I'm the fear addicted, a danger illustrated",
+  "48",
+  "I'm a firestarter, twisted firestarter",
+  "54",
+  "You're a firestarter, twisted firestarter",
+  "60",
+  "I'm a firestarter, twisted firestarter",
+  "71",
+  "I'm the bitch you hated, filth infatuated, yeah",
+  "78",
+  "I'm the pain you tasted, fell intoxicated",
+  "85",
+  "I'm a firestarter, twisted firestarter",
+  "90",
+  "You're the firestarter, twisted firestarter",
+  "125",
+  "I'm the self inflicted, mind detonator, yeah",
+  "132",
+  "I'm the one infected, twisted animator",
+  "139",
+  "I'm a firestarter, twisted firestarter",
+  "145",
+  "You're the firestarter, twisted firestarter",
+  "152",
+  "I'm a firestarter, twisted firestarter starter"
+]
+
 function App() {
   const [song, setSong] = useState("")
 
@@ -93,6 +127,7 @@ function App() {
       {song=="Maneskin - Beggin" && <ManeskinBeggin setSong={setSong} />}
       {song=="Johnny Cash - Walk The Line" && <JonnyCashWalkTheLine setSong={setSong} />}
       {song=="Kavinsky - Nightcall" && <Song setSong={setSong} lyricals={KavinskyNightcallLyrics} storageName={"kavinskyNightcallScores"} audioSrc={"./Kavinsky - Nightcall/Kavinsky - Nightcall.opus"} songEnd={230} />}
+      {song=="Prodigy - Firestarter" && <Song setSong={setSong} lyricals={ProdigyFirestarterLyrics} storageName={"prodigyFirestarterScores"} audioSrc={"./Prodigy - Firestarter/The Prodigy - Firestarter.m4a"} songEnd={200} />}
     </div>
   )
 }
